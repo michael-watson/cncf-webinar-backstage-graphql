@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ${{ values.name | dump }}
+  description: >-
+    ${{ values.description | dump }}
+  tags:
+    - subgraph
+spec:
+  type: graphql
+  lifecycle: experimental
+  owner: group:api
+  system: supergraph
